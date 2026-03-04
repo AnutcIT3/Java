@@ -48,6 +48,5 @@ public class NhanVienSanXuat extends NgayThang implements NhanVien {
     public String NgaySinhNhanVien() {
         return ngay+"/"+thang+"/"+nam;
     }
-    
 }
 
