@@ -21,15 +21,6 @@ public class Diem implements IShape{
     public double chuVi() {
         return 0;
     }
-    @Override
-    public void tinhTien2(double dX, double dY) {
-        this.x += dX;
-        this.y += dY;
-    }
-    @Override
-    public Diem tinhTien(double dX, double dY) {
-        return new Diem(this.x+dX,this.y+dY);
-    }
     public double khoangCach(Diem A){
         return Math.sqrt(Math.pow(this.x-A.x,2)+Math.pow(this.y-A.y,2));
     }
@@ -39,5 +30,14 @@ public class Diem implements IShape{
         x =sc.nextDouble();
         y=sc.nextDouble();
 
+    }
+    @Override
+    public void tinhTien2(double dX, double dY) {
+        this.x += dX;
+        this.y += dY;
+    }
+    @Override
+    public Diem tinhTien(double dX, double dY) {
+        return new Diem(this.x+dX,this.y+dY);
     }
 }
