@@ -14,6 +14,7 @@ import java.awt.Dimension;
 
 
 public class Snake extends JFrame {
+    private ControlWindow cw = new ControlWindow();
     public Snake(){
         this.add( new WindowPanel() );
         this.pack();
@@ -137,4 +138,3 @@ class Consts{
     public static final int WIDTH = 1000;
     public static final int HEIGHT  = 550; 
 }
-
